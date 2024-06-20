@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="form">
+          <form id="form" novalidate="novalidate">
+            <div class="inputs">
+              <div class="form-control">
+                <label for="day">DAY</label>
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="DD"
+                  name="day"
+                  id="dayInput"
+                  maxlength="2"
+                />
+                <small class="error"></small>
+              </div>
+              <div class="form-control">
+                <label for="month">MONTH</label>
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="MM"
+                  name="month"
+                  id="monthInput"
+                />
+                <small class="error"></small>
+              </div>
+              <div class="form-control">
+                <label for="year">YEAR</label>
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="YYYY"
+                  name="year"
+                  id="yearInput"
+                />
+                <small class="error"></small>
+              </div>
+            </div>
+            <div class="br form-control">
+              <div class="line"></div>
+              <button id="submit-btn" class="btn" type="submit">
+                <img src="assets/images/icon-arrow.svg" alt="" />
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="result">
+          <h1 class="date"><span data-date="output-year"> --</span> years</h1>
+          <h1 class="date"><span data-date="output-month"> --</span> months</h1>
+          <h1 class="date"><span data-date="output-day"> --</span> days</h1>
+        </div>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
